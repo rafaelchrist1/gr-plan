@@ -1,0 +1,78 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "GR-plan API doc",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/produto": {
+            "get": {
+                "tags": [
+                    "Produtos"
+                ],
+                "summary": "Get list of produtos",
+                "description": "Returns list of produtos",
+                "operationId": "index",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Produtos"
+                ],
+                "summary": "Store new project",
+                "description": "Returns project data",
+                "operationId": "produto.store",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "nome"
+                                ],
+                                "properties": {
+                                    "nome": {
+                                        "type": "string",
+                                        "example": "Freezer"
+                                    },
+                                    "descricao": {
+                                        "type": "string",
+                                        "example": "texto longo"
+                                    },
+                                    "tensao": {
+                                        "type": "string",
+                                        "example": "220v"
+                                    },
+                                    "marca_id": {
+                                        "type": "integer",
+                                        "example": "1"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        }
+    }
+}
