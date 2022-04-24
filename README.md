@@ -1,3 +1,4 @@
+![GitHub Light](https://github.com/github-light.png#gh-dark-mode-only)
 # gr-plan
 Objetivo:realizar um CRUD de eletromésticos utilizando Docker+Laravel+vue
 
