@@ -4,8 +4,8 @@ A apliaão é via Docker, então como pré-requisito tenha docker na sua máquin
 
 Passo a passo para iniciarlizar aplicação:
 
-Passso 1:
-# git clone
+# Passso 1:
+> git clone
 
 Passo 1.1 - Copiar arquivo ".env.example" para ".env"
 # cp .env.example .env
