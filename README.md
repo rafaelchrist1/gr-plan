@@ -1,16 +1,16 @@
 # gr-plan
-Objetivo:realizar um CRUD de eletroomésticos utilizando Docker+Laravel+vue
+Objetivo:realizar um CRUD de eletromésticos utilizando Docker+Laravel+vue
 
 Com a apliação é via Docker, existe como pré-requisito docker configurado na sua máquina com qualquer sistema UNIX ou via WSL
 
 Passo a passo para iniciarlizar aplicação:
-# Passso 1:
+# Passso 1 - Baixar repo:
 > git clone
 # Passo 1.1 - Copiar arquivo ".env.example" para ".env"
 > cp .env.example .env
-# Passso 2:
+# Passso 2 - Compilar container:
 > sudo docker-compose up -d --build
-# Passso 3:
+# Passso 3 - subir server principal:
 > sudo docker-compose up
 # Passo 4: 
 > docker-compose run --rm composer install
@@ -23,4 +23,4 @@ Passo a passo para iniciarlizar aplicação:
 # Passo 7:
 > docker-compose run --rm artisan db:seed
 # Passo 8 
-> click:http://localhost:8080/
+> click: http://localhost:8080/
