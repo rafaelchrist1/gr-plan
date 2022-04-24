@@ -7,15 +7,16 @@ Passo a passo para iniciarlizar aplicação:
 # Passso 1:
 > git clone
 
-Passo 1.1 - Copiar arquivo ".env.example" para ".env"
-# cp .env.example .env
+# Passo 1.1 - Copiar arquivo ".env.example" para ".env"
+> cp .env.example .env
 
-Passso2:
-# sudo docker-compose up -d --build
-Passso 2.2:
-# sudo docker-compose up
+# Passso2:
+> sudo docker-compose up -d --build
+# Passso 2.2:
+> sudo docker-compose up
 
 # Passo 3: acessar http://localhost:5051/login?next=%2Fbrowser%2F
+
 user:admin@admin.com
 senha:root
 
@@ -30,17 +31,17 @@ username:postgres
 Password:postgres 
 
 
-Passo 4: 
-# docker-compose run --rm composer install
-Passo 5: 
-#  docker-compose run --rm npm install
-Passo 6: 
-#  docker-compose run --rm npm run dev
-Passo 7: 
-# sudo docker-compose run --rm artisan migrate
+# Passo 4: 
+> docker-compose run --rm composer install
+# # Passo 5: 
+>  docker-compose run --rm npm install
+# Passo 6: 
+>  docker-compose run --rm npm run dev
+# Passo 7: 
+> sudo docker-compose run --rm artisan migrate
 
-Passo 7:
-# docker-compose run --rm artisan db:seed
+# Passo 7:
+> docker-compose run --rm artisan db:seed
 
-Passo 8 
-# click:http://localhost:8080/
+# Passo 8 
+> click:http://localhost:8080/
