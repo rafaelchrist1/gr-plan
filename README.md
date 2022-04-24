@@ -8,13 +8,13 @@ Passo a passo para iniciarlizar aplicação:
 > git clone
 # Passo 1.1 - Copiar arquivo ".env.example" para ".env"
 > cp .env.example .env
-# Passso2:
+# Passso 2:
 > sudo docker-compose up -d --build
 # Passso 3:
 > sudo docker-compose up
 # Passo 4: 
 > docker-compose run --rm composer install
-# # Passo 5: 
+# Passo 5: 
 >  docker-compose run --rm npm install
 # Passo 6: 
 >  docker-compose run --rm npm run dev
