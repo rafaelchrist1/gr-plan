@@ -23,14 +23,9 @@ class ProdutoController extends Controller
      *          description="Successful operation",
      *       ),
      *      @OA\Response(
-     *          response=401,
-     *          description="Unauthenticated",
-     *      ),
-     *      @OA\Response(
-     *          response=403,
-     *          description="Forbidden"
+     *          response=400,
+     *          description="Bad Requet",
      *      )
-     *     )
      */
     public function index()
     {
