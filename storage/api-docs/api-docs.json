@@ -29,11 +29,11 @@
                 "tags": [
                     "Produtos"
                 ],
-                "summary": "Store new project",
-                "description": "Returns project data",
+                "summary": "Store new produto",
+                "description": "Returns produto data",
                 "operationId": "produto.store",
                 "requestBody": {
-                    "description": "Pass user credentials",
+                    "description": "Oasse as informações do produto",
                     "required": true,
                     "content": {
                         "application/json": {
@@ -70,6 +70,40 @@
                     },
                     "400": {
                         "description": "Bad Request"
+                    }
+                }
+            }
+        },
+        "/api/produto/{id}": {
+            "delete": {
+                "tags": [
+                    "Produtos"
+                ],
+                "summary": "Delete existing produto",
+                "description": "Deletes a record and returns no content",
+                "operationId": "produto.destroy",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Produto id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad requets"
                     }
                 }
             }

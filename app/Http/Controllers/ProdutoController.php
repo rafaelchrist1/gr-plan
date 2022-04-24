@@ -52,11 +52,11 @@ class ProdutoController extends Controller
      *      path="/api/produto",
      *      operationId="produto.store",
      *      tags={"Produtos"},
-     *      summary="Store new project",
-     *      description="Returns project data",
+     *      summary="Store new produto",
+     *      description="Returns produto data",
      *      * @OA\RequestBody(
      *    required=true,
-     *    description="Pass user credentials",
+     *    description="Oasse as informações do produto",
      *    @OA\JsonContent(
      *       required={"nome"},
      *       @OA\Property(property="nome", type="string", example="Freezer"),
@@ -114,6 +114,35 @@ class ProdutoController extends Controller
         $produto->update($request->all());
         return response()->json('Eletrodoméstico atualizado!');
     }
+
+
+    /**
+     * @OA\Delete(
+     *      path="/api/produto/{id}",
+     *      operationId="produto.destroy",
+     *      tags={"Produtos"},
+     *      summary="Delete existing produto",
+     *      description="Deletes a record and returns no content",
+     *      @OA\Parameter(
+     *          name="id",
+     *          description="Produto id",
+     *          required=true,
+     *          in="path",
+     *          @OA\Schema(
+     *              type="integer"
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response=204,
+     *          description="Successful operation",
+     *          @OA\JsonContent()
+     *       ),
+     *      @OA\Response(
+     *          response=400,
+     *          description="Bad requets",
+     *      )
+     * )
+     */
     public function destroy($id)
     {
         $produto = Produto::find($id);

@@ -24,3 +24,8 @@ Passo a passo para iniciarlizar aplicação:
 > docker-compose run --rm artisan db:seed
 # Passo 8 
 > click: http://localhost:8080/
+
+# API DOC SWAGGER
+Documentação de API/PRODUTOS, para fins de testes e validação por URL
+
+! [api/documentation]https://drive.google.com/file/d/1sipelqWXAHY2SyVGiSmAwhtHQdn0Yorw/view?usp=sharing
