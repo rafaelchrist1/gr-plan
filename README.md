@@ -28,4 +28,4 @@ Passo a passo para iniciarlizar aplicação:
 # API DOC SWAGGER
 Documentação de API/PRODUTOS, para fins de testes e validação por URL
 
-! [api/documentation]https://drive.google.com/file/d/1sipelqWXAHY2SyVGiSmAwhtHQdn0Yorw/view?usp=sharing
+! [api/documentation]https://github.com/rafaelchrist1/gr-plan/blob/master/public/Api_doc.JPG
