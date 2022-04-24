@@ -24,8 +24,9 @@ class ProdutoController extends Controller
      *       ),
      *      @OA\Response(
      *          response=400,
-     *          description="Bad Requet",
+     *          description="Bad Requets",
      *      )
+     *     )
      */
     public function index()
     {
