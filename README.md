@@ -2,7 +2,7 @@
 # gr-plan
 Objetivo:realizar um CRUD de eletromésticos utilizando Docker+Laravel+vue
 
-Com a apliação é via Docker, existe como pré-requisito docker configurado na sua máquina com qualquer sistema UNIX ou via WSL
+Como a apliação é utilizando Docker, como pré-requisito, precisa-se docker configurado na sua máquina com ao menos um distribuição de OS UNIX ou via WSL
 
 Passo a passo para iniciarlizar aplicação:
 # Passso 1 - Baixar repo:
