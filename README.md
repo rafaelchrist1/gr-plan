@@ -17,7 +17,7 @@ Passo a passo para inicializar aplicação:
 > docker-compose run --rm composer install
 # Passo 5: - Instalar dependências node
 >  docker-compose run --rm npm install
-# Passo 6 - Compilar frotend 
+# Passo 6 - Compilar frontend 
 >  docker-compose run --rm npm run dev
 # Passo 7 - Criar tabelas
 > sudo docker-compose run --rm artisan migrate
