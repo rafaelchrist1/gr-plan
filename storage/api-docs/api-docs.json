@@ -71,6 +71,109 @@
                 }
             }
         },
+        "/api/produto/create": {
+            "get": {
+                "tags": [
+                    "Produtos"
+                ],
+                "summary": "Get list of models for create produto",
+                "description": "Returns list of create models",
+                "operationId": "produto.create",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Bad Requets"
+                    }
+                }
+            }
+        },
+        "/api/produto/{produto}": {
+            "get": {
+                "tags": [
+                    "Produtos"
+                ],
+                "summary": "Get produto information",
+                "description": "Returns produto data",
+                "operationId": "produto.show",
+                "parameters": [
+                    {
+                        "name": "produto",
+                        "in": "path",
+                        "description": "Produto id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Produtos"
+                ],
+                "summary": "Update existing produto",
+                "description": "Returns updated produto data",
+                "operationId": "produto.update",
+                "parameters": [
+                    {
+                        "name": "produto",
+                        "in": "path",
+                        "description": "Produto id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "Oasse as informações do produto",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nome": {
+                                        "type": "string",
+                                        "example": "Update Freezer"
+                                    },
+                                    "descricao": {
+                                        "type": "string",
+                                        "example": "Update texto longo"
+                                    },
+                                    "tensao": {
+                                        "type": "string",
+                                        "example": "220v"
+                                    },
+                                    "marca_id": {
+                                        "type": "integer",
+                                        "example": "1"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "202": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    }
+                }
+            }
+        },
         "/api/produto/{id}": {
             "delete": {
                 "tags": [
