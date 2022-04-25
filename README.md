@@ -4,7 +4,7 @@ Objetivo:realizar um CRUD de eletromésticos utilizando Docker+Laravel+vue
 
 Como a apliação é utilizando Docker, como pré-requisito, precisa-se docker configurado na sua máquina com ao menos um distribuição de OS UNIX ou via WSL
 
-Passo a passo para iniciarlizar aplicação:
+Passo a passo para inicializar aplicação:
 # Passso 1 - Baixar repo:
 > git clone
 # Passo 1.1 - Copiar arquivo ".env.example" para ".env"
