@@ -27,6 +27,9 @@ Passo a passo para iniciarlizar aplicação:
 > click: http://localhost:8080/
 
 # API DOC SWAGGER
-Documentação de API/PRODUTOS, para fins de testes e validação por URL
+Documentação de API/PRODUTOS, para fins de testes e validação por URL, é só utilizar no link:http://localhost:8080/api/documentation 
 
 ![api/documentation](https://github.com/rafaelchrist1/gr-plan/blob/master/public/Api_doc.JPG)
+
+# Testes e validação
+![api/documentation](https://github.com/rafaelchrist1/gr-plan/blob/master/public/Api_doc_testes.JPG)
