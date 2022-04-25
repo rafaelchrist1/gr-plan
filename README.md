@@ -6,7 +6,7 @@ Como a aplicação é utilizando Docker, como pré-requisito, precisa-se docker 
 
 Passo a passo para inicializar aplicação:
 # Passso 1 - Baixar repo:
-> git clone
+> git clone https://github.com/rafaelchrist1/gr-plan.git
 # Passo 1.1 - Copiar arquivo ".env.example" para ".env"
 > cp .env.example .env
 # Passso 2 - Compilar container:
