@@ -11,19 +11,19 @@ Passo a passo para inicializar aplicação:
 > cp .env.example .env
 # Passso 2 - Compilar container:
 > sudo docker-compose up -d --build
-# Passso 3 - subir server principal:
+# Passso 3 - Subir server principal:
 > sudo docker-compose up
-# Passo 4: 
+# Passo 4 - Instalar dependências composer
 > docker-compose run --rm composer install
-# Passo 5: 
+# Passo 5: - Instalar dependências node
 >  docker-compose run --rm npm install
-# Passo 6: 
+# Passo 6 - Compilar frotend 
 >  docker-compose run --rm npm run dev
-# Passo 7: 
+# Passo 7 - Criar tabelas
 > sudo docker-compose run --rm artisan migrate
-# Passo 7:
+# Passo 7 - Preencher base
 > docker-compose run --rm artisan db:seed
-# Passo 8 
+# Passo 8 - Acesso
 > click: http://localhost:8080/
 
 # API DOC SWAGGER
