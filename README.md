@@ -32,4 +32,4 @@ Documentação de API/PRODUTOS, para fins de testes e validação por URL, é s�
 ![api/documentation](https://github.com/rafaelchrist1/gr-plan/blob/master/public/Api_doc.JPG)
 
 # Testes e validação
-![api/documentation](https://github.com/rafaelchrist1/gr-plan/blob/master/public/Api_doc_testes.JPG)
+![Testes](https://github.com/rafaelchrist1/gr-plan/blob/master/public/Api_doc_testes.JPG)
